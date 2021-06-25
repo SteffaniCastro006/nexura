@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="{{ asset('/images/logo.jpg') }}" alt="" width="100" height="30" class="d-inline-block align-text-top">
+    <img src="http://www.shareit.com.co/Portafolio/nexura%20logo.jpg" alt="" width="100" height="30" class="d-inline-block align-text-top">
 </p>
 
 ## About Laravel
