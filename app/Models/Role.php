@@ -12,4 +12,7 @@ class Role extends Model
 
     protected $fillable = ['name'];
 
+    public static function forDropdown(){
+    	return self::all()->pluck('name', 'id');
+    }
 }

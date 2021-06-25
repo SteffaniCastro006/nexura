@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\EmployeeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,5 +13,8 @@ use App\Http\Controllers\DashboardController;
 |
 */
 
-Route::get('/', [DashboardController::class, 'index'])->name('index');
+Route::get('/', [EmployeeController::class, 'index'])->name('index');
+
+/* RESOURCES */
+Route::resources(['employees' => EmployeeController::class]);
 

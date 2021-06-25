@@ -21,7 +21,7 @@ class EmployeeSeeder extends Seeder
         for ($i = 0; $i < 6; $i++) {
 
             $employees[] = [
-                'area_id' => rand(1,6),
+                'area_id' => rand(1,4),
                 'newsletter' => rand(0,1),
                 'name' => $faker->name,
                 'email' => $faker->email,

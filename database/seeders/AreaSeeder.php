@@ -15,21 +15,28 @@ class AreaSeeder extends Seeder
      */
     public function run()
     {
-        $faker = Factory::create();
+        Area::create([
+            'name' => 'Administracion',
+            'created_at' => now()->toDateString(),
+            'updated_at' => now()->toDateString()
+        ]);
 
-        $areas = [];
-        for ($i = 0; $i < 6; $i++) {
+        Area::create([
+            'name' => 'Ventas',
+            'created_at' => now()->toDateString(),
+            'updated_at' => now()->toDateString()
+        ]);
 
-            $areas[] = [
-                'name' => $faker->name,
-                'created_at' => now()->toDateTimeString(),
-                'updated_at' => now()->toDateTimeString()
-            ];
-        }
+        Area::create([
+            'name' => 'Calidad',
+            'created_at' => now()->toDateString(),
+            'updated_at' => now()->toDateString()
+        ]);
 
-        $chunks = array_chunk($areas, 10);
-        foreach ($chunks as $chunk) {
-            Area::insert($chunk);
-        }
+        Area::create([
+            'name' => 'Produccion',
+            'created_at' => now()->toDateString(),
+            'updated_at' => now()->toDateString()
+        ]);
     }
 }

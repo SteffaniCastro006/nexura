@@ -22,7 +22,7 @@ class EmployeeRoleSeeder extends Seeder
 
             $employe_role[] = [
                 'employee_id' => rand(1,6),
-                'role_id' => rand(1,6),
+                'role_id' => rand(1,4),
                 'created_at' => now()->toDateTimeString(),
                 'updated_at' => now()->toDateTimeString()
             ];
